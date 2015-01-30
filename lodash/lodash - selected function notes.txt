@@ -1,0 +1,27 @@
+lodash functions
+
+_compose			http://lodash.com/docs#compose
+	var composedFunction = _.compose(function2, function1);
+		// returns function to composedFunction,
+		// such that it's function2(function1())
+
+_filter, a.k.a. _select		http://lodash.com/docs#select
+	returns an array of elements that passed the callback check	
+
+_map				
+	_.map(array/collection, toDoFunction())
+	returns an array of the results of running toDoFunction() on 
+	each element of the original array.
+
+_pluck
+	_.pluck(collection, property)
+	returns the specified property across the collection
+
+_reduce
+	kind of accumulates it all?
+
+_reject
+	the opposite of _select/_filter
+
+_where
+	Performs a deep comparison of each element in a collection to the given 	properties object, returning an array of all elements that have equivalent 	property values.
