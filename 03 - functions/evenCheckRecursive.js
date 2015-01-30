@@ -5,16 +5,16 @@
 // write this fn, fn(num) -> boolean
 var evenCheckRecursive = function(num) {
   function recur(num){
-    // 0 is even, basecase
+    // 0 is even, a basecase
     if (num === 0) return true;
-    // 1 is odd, basecase
+    // 1 is odd, a basecase
     if (num === 1) return false;
 
     // if num is (+), recur(n-2)
     if (num > 0) {    // num is (+)
       return recur(num - 2);
     }
-    // else, (num is (-)), recur(n+2)
+    // else, the num is (-), recur(n+2)
     else return recur(num + 2);
   }
   return recur(num);
