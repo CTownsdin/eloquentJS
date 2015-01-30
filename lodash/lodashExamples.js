@@ -7,7 +7,7 @@ var _ = require('./lodash.min.js');
 //   var composedFunction = _.compose(function2, function1);
 
 
-// _.filter, a.k.a. _select
+// _.filter, a.k.a. _.select
 //   returns an array of elements that passed the callback check
 var arr = [1,2,3,4,5];
 var str = "Hello Betty, looking Beautiful today!";
@@ -69,3 +69,10 @@ console.log('_.reduce(): ' + _.reduce(arr, function(prod, num){
 //   Performs a deep comparison of each element in a collection to the given   properties object, returning an array of all elements that have equivalent  property values.
 console.log('_.where(characters, {\'age\': 32}): ' +
   _.where(characters, {'age': 32}));
+
+// _.find
+console.log('');
+console.log('_.find() a char(s) <= 40: ' + _.find(characters, function(c) {
+  return c.age <= 40;
+}));
+// {adam}, {sally}, {john}, {prince}
