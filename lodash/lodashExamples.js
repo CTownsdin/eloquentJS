@@ -75,4 +75,4 @@ console.log('');
 console.log('_.find() a char(s) <= 40: ' + _.find(characters, function(c) {
   return c.age <= 40;
 }));
-// {adam}, {sally}, {john}, {prince}
+// {adam} just the first one found.

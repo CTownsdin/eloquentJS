@@ -16,11 +16,11 @@ console.log('_.compact: ' + _.compact(mySparseArray));
 
 // countBs again, but now with lodash
 var countBs2 = function(str) {
-  var bCount = _.reduce(str, function(sum, num){
-
-    return
+  var bCount = _.filter(str, function(ch){
+    return ch === 'B';
   });
+  return bCount.length;
 };
 
-
 console.log('bCount of: jBjB123B: ' + countBs('jBjB123B'));
+console.log('bCount of: jBjB123B: ' + countBs2('jBjB123B'));
